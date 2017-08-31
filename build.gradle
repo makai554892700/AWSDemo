@@ -1,0 +1,28 @@
+group 'AWSDemo'
+version '1.0'
+apply plugin: 'war'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    //spring核心包
+    compile 'org.springframework:spring-core:4.0.2.RELEASE'
+    compile 'org.springframework:spring-web:4.0.2.RELEASE'
+    compile 'org.springframework:spring-oxm:4.0.2.RELEASE'
+    compile 'org.springframework:spring-webmvc:4.0.2.RELEASE'
+    compile 'org.springframework:spring-aop:4.0.2.RELEASE'
+    compile 'org.springframework:spring-context-support:4.0.2.RELEASE'
+    compile 'org.springframework:spring-test:4.0.2.RELEASE'
+    //java ee jar 包
+    compile 'javax:javaee-api:7.0'
+    //格式化对象
+    compile 'com.alibaba:fastjson:1.1.41'
+    //映入JSON
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    //dynamodb
+    compile 'com.amazonaws:aws-java-sdk-dynamodb:1.11.172'
+    //s3
+    compile 'com.amazonaws:aws-java-sdk-s3:1.11.172'
+}
+
+
